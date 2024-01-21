@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'TrajanPro';
+    src: url('fonts/trajanpro/trajanpro-regular-webfont.eot');
+    src: url('fonts/trajanpro/trajanpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/trajanpro/trajanpro-regular-webfont.woff') format('woff'),
+         url('fonts/trajanpro/trajanpro-regular-webfont.ttf') format('truetype'),
+         url('fonts/trajanpro/trajanpro-regular-webfont.svg#trajan_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(253, 253, 255);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: rgb(220, 240, 233);
+    height: 70vh;
+    width: 25vw;
+    border-radius: 10px;
+    box-shadow: -1px 6px 16px 0px rgb(18, 19, 19);
+}
+
+.nav1 {
+    background-color: rgb(120, 138, 138);
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+}
+
+.nav1 img {
+    width:10vw;
+    border-radius: 50%;
+    margin-top: 10vh;
+    border:3px solid rgb(120, 138, 138);
+    padding: 1px;
+}
+
+.name {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: 10vh;
+    text-align: center;
+    background-color: transparent;
+    font-family : Avenir Black ;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    background-color: transparent;
+    font-weight: 400;
+    font-family: 'TrajanPro';
+}
+
+.link {
+    background-color: transparent;
+}
+
+.link ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.5em;
+    align-items: center;
+    margin-top: 7vh;
+    background-color: transparent;
+}
+
+.link ul a {
+    background-color: transparent;
+}
+
+.link ul a i {
+    background-color: transparent;
+}
+
+.fa-facebook {
+    color:black;
+    font-size: 3.2rem;
+}
+
+.fa-facebook:hover {
+    color:blue;
+}
+
+.fa-github {
+    color: black;
+    font-size: 3.2rem;
+}
+
+.fa-github:hover {
+    background-color: black;
+      border-radius: 3rem;
+     
+      color: white;
+}
+
+.fa-linkedin {
+    color:black;
+    font-size: 3.3rem;
+}
+
+.fa-linkedin:hover {
+    color:rgb(0, 110, 255);
+}
+
+.fa-instagram {
+    background: black;
+    color:black;
+    font-size: 3rem;
+}
+
+.fa-instagram:hover {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
+    color:white;
+    border-radius: 10px;
+    padding:4px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 6vh;
+    background-color: transparent;
+}
+.footer a {
+    background-color: transparent;
+}
+
+.footer a i{
+    background-color: transparent;
+    font-size: 2.4rem;
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 2.7rem;
+    padding: 0 2rem;
+    border-radius: 1.2rem;
+    background: #646466;
+    background-size: 400%;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    font-size: 1.4rem;
+    font-family: Avenir;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin:100% 0;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgb(42, 71, 57) 10.8%,
+      rgb(23, 161, 97) 94.3%
+    );
+    transition: all 0.475s;
+  }
+
+  .share-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 120px;
+    height: 2.7rem;
+    position: relative;
+    border: 1px solid #81aca0;
+    background-color: #209978;
+    overflow: hidden;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    border-radius: 1.2rem;
+  }
+  .button__text {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: #646466;
+  }
+  
+  .button__icon {
+    width: 40px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #17795e;
+    position: absolute;
+    right: 0;
+    transition: all 0.3s;
+  }
+  .button__icon svg {
+    width: 18px;
+    background-color: #17795e;
+  }
+  .share-button:hover .button__icon {
+    width: 100%;
+    background: linear-gradient(
+        82.3deg,
+        rgb(42, 71, 57) 10.8%,
+        rgb(23, 161, 97) 94.3%
+      );
+      transition: all 0.475s;
+  }
+  
+  @media (max-width:900px) {
+    .card {
+        height: 80vh;
+        width: 80vw;
+    }
+    .nav1 img{
+        width:10em;
+        border-radius: 50%;
+    }
+    .name {
+        font-size: 2.5rem;
+    }
+    .skill {
+        font-size: 1.7rem;
+    }
+  }
